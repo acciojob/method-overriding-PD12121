@@ -1,13 +1,11 @@
-package com.driver.test;
+import javax.sound.midi.Soundbank;
 
-//import static org.junit.Assert.*;
-//import org.junit.jupiter.api.Test;
-
-public class TestCases {
+public class Main {
     public static void main(String[] args) {
-        B obj = new B();
-        String ans =obj.meth();
-        System.out.println(ans);
+        B b = new B();
+        System.out.println(b.a.meth());
+        
+        System.out.println(b.meth());
     }
 }
 class A{
@@ -16,7 +14,7 @@ class A{
     }
 }
 class B extends A{
-    
+    A a = new A();
     String meth(){
         return "Method is overridden in Extendend class B";
     }
