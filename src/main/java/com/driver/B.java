@@ -6,4 +6,5 @@ public class B extends A {
         System.out.println(super.meth());
         return "Method is overridden in Extendend class B";
     }
+
 }
